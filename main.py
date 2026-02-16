@@ -23,8 +23,12 @@ def main():
         walls.append((5, c))
 
     grid = Grid(WIDTH, HEIGHT, walls, START, TARGET)
-    
-    # 2. Select Algorithm
+
+    # 2. Show Static Grid & Menu
+    vis = Visualizer(grid)
+    import matplotlib.pyplot as plt # Ensure plt is available
+    plt.pause(0.1) # Essential to render the window before input blocks
+
     print("AI Pathfinder - Blind Search Visualization")
     print("------------------------------------------")
     print("1. Breadth-First Search (BFS)")
@@ -63,7 +67,6 @@ def main():
         return
 
     # 3. Run Visualization
-    vis = Visualizer(grid)
     vis.ax.set_title(f"AI Pathfinder - {title}")
     
     found = False

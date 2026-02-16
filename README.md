@@ -67,31 +67,31 @@ Below are sample visualizations showing the search algorithms in action.
 ### 📌 Visualization Examples
 
 ![Figure 1: Search algorithm execution](images/Figure_1.png)
-*Figure 1: Search algorithm execution*
+*Figure 1: 15 x 15 Grid with Start and Target nodes*
 
 ![Figure 2: Search algorithm execution](images/Figure_2.png)
-*Figure 2: Search algorithm execution*
+*Figure 2: BFS algorithm execution START*
 
 ![Figure 3: Search algorithm execution](images/Figure_3.png)
-*Figure 3: Search algorithm execution*
+*Figure 3: BFS algorithm execution STOP*
 
 ![Figure 4: Search algorithm execution](images/Figure_4.png)
-*Figure 4: Search algorithm execution*
+*Figure 4: Bi-Directional Algorithm START*
 
 ![Figure 5: Search algorithm execution](images/Figure_5.png)
-*Figure 5: Search algorithm execution*
+*Figure 5: Bi-Directional Algorithm RUNNING*
 
 ![Figure 6: Search algorithm execution](images/Figure_6.png)
-*Figure 6: Search algorithm execution*
+*Figure 6: Bi-Directional Algorithm STOPS*
 
 ![Figure 7: Search algorithm execution](images/Figure_7.png)
-*Figure 7: Search algorithm execution*
+*Figure 7: UCS RUNNING*
 
 ![Figure 8: Search algorithm execution](images/Figure_8.png)
-*Figure 8: Search algorithm execution*
+*Figure 8: UCS STOPS*
 
 ![Figure 9: Search algorithm execution](images/Figure_9.png)
-*Figure 9: Search algorithm execution*
+*Figure 9: DFS RUNNING*
 
 ![Figure 10: Search algorithm execution](images/Figure_10.png)
-*Figure 10: Search algorithm execution*
+*Figure 10: DFS STOPS*

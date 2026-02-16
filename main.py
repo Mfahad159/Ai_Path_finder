@@ -6,19 +6,20 @@ from search_algorithms import SearchAlgorithms
 
 def main():
     # 1. Setup Grid
-    WIDTH, HEIGHT = 10, 10
+    # 1. Setup Grid
+    WIDTH, HEIGHT = 15, 15
     START = (2, 2)
-    TARGET = (17, 17)
+    TARGET = (13, 13)
     
     # Create some walls
     walls = []
     # Vertical wall
-    for r in range(5, 15):
+    for r in range(5, 14): # Adjusted for height 15
         walls.append((r, 10))
     # Horizontal walls
     for c in range(2, 8):
         walls.append((12, c))
-    for c in range(12, 18):
+    for c in range(11, 15): # Adjusted (max 14)
         walls.append((5, c))
 
     grid = Grid(WIDTH, HEIGHT, walls, START, TARGET)

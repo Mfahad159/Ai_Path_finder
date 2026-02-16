@@ -22,7 +22,7 @@ Each algorithm explores the same grid environment using a consistent movement po
 
 ---
 
-## 🧭 Strict Movement Order
+##  Strict Movement Order
 
 All algorithms expand neighboring nodes using a **fixed clockwise order** (including only the main diagonal directions):
 
@@ -54,10 +54,10 @@ The visualization will then animate how the chosen algorithm explores the grid.
 
 ---
 
-## 🖼️ Project Gallery
+##  Project Gallery
 Below are sample visualizations showing the search algorithms in action.
 
-### 🎨 Color Legend
+###  Color Legend
 *   🔵 **Blue** — Start Node
 *   🟢 **Green** — Target Node
 *   🟡 **Yellow** — Explored Nodes

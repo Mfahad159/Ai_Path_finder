@@ -28,3 +28,39 @@ The algorithms explore neighbors in this specific clockwise order (including mai
     ```bash
     python main.py
     ```
+
+## Project Gallery
+
+Here are visualizations of the search algorithms exploring the grid.
+*(Blue = Start, Green = Target, Yellow = Explored, Red = Frontier, Purple = Path)*
+
+### 1. Visualization Examples
+![Search Vis 1](images/Figure_1.png)
+*Figure 1: Algorithm execution*
+
+![Search Vis 2](images/Figure_2.png)
+*Figure 2: Algorithm execution*
+
+![Search Vis 3](images/Figure_3.png)
+*Figure 3: Algorithm execution*
+
+![Search Vis 4](images/Figure_4.png)
+*Figure 4: Algorithm execution*
+
+![Search Vis 5](images/Figure_5.png)
+*Figure 5: Algorithm execution*
+
+![Search Vis 6](images/Figure_6.png)
+*Figure 6: Algorithm execution*
+
+![Search Vis 7](images/Figure_7.png)
+*Figure 7: Algorithm execution*
+
+![Search Vis 8](images/Figure_8.png)
+*Figure 8: Algorithm execution*
+
+![Search Vis 9](images/Figure_9.png)
+*Figure 9: Algorithm execution*
+
+![Search Vis 10](images/Figure_10.png)
+*Figure 10: Algorithm execution*

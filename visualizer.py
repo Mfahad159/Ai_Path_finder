@@ -68,3 +68,19 @@ class Visualizer:
         self.img.set_data(self.grid_data)
         self.fig.canvas.flush_events()
 
+    def reset(self):
+        # Reset grid data to initial state (Walls, Start, Target only)
+        self.grid_data = [[0 for _ in range(self.grid.width)] for _ in range(self.grid.height)]
+        
+        for r, c in self.grid.walls:
+            self.grid_data[r][c] = 1
+        
+        sr, sc = self.grid.start_pos
+        tr, tc = self.grid.target_pos
+        self.grid_data[sr][sc] = 2
+        self.grid_data[tr][tc] = 3
+        
+        self.img.set_data(self.grid_data)
+        self.fig.canvas.flush_events()
+        self.ax.set_title("AI Pathfinder - Blind Search Visualization")
+

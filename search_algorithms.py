@@ -57,12 +57,6 @@ class SearchAlgorithms:
                 explored.add((node.r, node.c))
                 yield frontier_set, explored, []
 
-                # Reverse neighbors to preserve clockwise order when popping from stack
-                # Neighbors are: Up, Right, Bottom, Bottom-Right, Left, Top-Left
-                # Stack LIFO needs Top-Left pushed LAST if we want to process it FIRST? 
-                # Wait, "Strict Movement Order... When expanding nodes... 1. Up"
-                # If we want to process 'Up' first, we push 'Up' LAST onto the stack?
-                # Usually "Expansion order" means the order we consider/add children.
                 # If we want to *visit* Up first, in DFS, we push neighbors in REVERSE order.
                 for neighbor in reversed(self.grid.get_neighbors(node)):
                      if (neighbor.r, neighbor.c) not in explored: # Optimization check
@@ -104,7 +98,6 @@ class SearchAlgorithms:
         explored_depths = {} # (r,c) -> min_depth visited
 
         # We can't use a simple valid 'explored' set because we might revisit at shallower depth.
-        # But for visualization, we just show what we visit.
         
         while path_stack:
             node = path_stack.pop()
@@ -127,9 +120,6 @@ class SearchAlgorithms:
     def iddfs(self):
         depth = 0
         while True:
-            # We yield from DLS. We need to clear visualization between depths? 
-            # Or just show the cumulative effort? 
-            # Usually IDDFS shows the fresh search each time.
             # But the 'explored' set in visualizer persists? 
             # The visualizer.update method REPLACES the grid colors based on inputs.
             # So if DLS yields empty sets at start, it clears.

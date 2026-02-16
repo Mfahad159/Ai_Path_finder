@@ -1,0 +1,10 @@
+.env*
+.env
+__pycache__
+env
+env*
+venv
+venv*
+*.pyc
+*.pyc*  
+test_movement.py

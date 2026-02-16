@@ -6,7 +6,7 @@ from search_algorithms import SearchAlgorithms
 
 def main():
     # 1. Setup Grid
-    WIDTH, HEIGHT = 20, 20
+    WIDTH, HEIGHT = 10, 10
     START = (2, 2)
     TARGET = (17, 17)
     

@@ -50,6 +50,7 @@ def main():
         plt.pause(0.1) 
         
         # Inner loop for algorithm selection on this map
+        algo = SearchAlgorithms(grid)
         while True:
             # Re-drawing the clean grid if we re-run logic would be nice, 
             # but visualizer.reset() handles that.
